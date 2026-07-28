@@ -1,0 +1,20 @@
+# Logs
+*.log
+api_log.txt
+error.log
+
+# Archives
+*.zip
+
+# Test/debug files
+test_*.php
+
+# Uploads directory content (keep directory, ignore files)
+uploads/*
+!uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+firebase-service-account.json
