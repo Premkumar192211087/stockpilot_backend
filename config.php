@@ -23,7 +23,7 @@ define('DB_PORT', getenv('DB_PORT') ?: '5432');
 define('DB_USER', getenv('DB_USER') ?: 'postgres');
 
 // Database Password: Set in Supabase Dashboard (Project Settings -> Database)
-define('DB_PASS', getenv('DB_PASS') ?: 'Nani@37516149');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 
 // Default database name in Supabase is always 'postgres'
 define('DB_NAME', getenv('DB_NAME') ?: 'postgres');
@@ -40,13 +40,13 @@ define('DB_SSLMODE', getenv('DB_SSLMODE') ?: 'require');
 define('SUPABASE_URL', getenv('SUPABASE_URL') ?: 'https://fwygiewtjqiukqvqflyb.supabase.co');
 
 // Anon Key: Public key for client apps
-define('SUPABASE_ANON_KEY', getenv('SUPABASE_ANON_KEY') ?: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3eWdpZXd0anFpdWtxdnFmbHliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUxNzI4NTcsImV4cCI6MjEwMDc0ODg1N30.Zoy5vqWesCSTmbl9rJbAmUgyuP6758e76wkG8Svhx5c');
+define('SUPABASE_ANON_KEY', getenv('SUPABASE_ANON_KEY') ?: '');
 
 // Service Role Key: Secret key for server-side administrative access (bypasses RLS)
-define('SUPABASE_SERVICE_ROLE_KEY', getenv('SUPABASE_SERVICE_ROLE_KEY') ?: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3eWdpZXd0anFpdWtxdnFmbHliIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTE3Mjg1NywiZXhwIjoyMTAwNzQ4ODU3fQ.FwR-IypGYsD23G6_j319qH-mZsKmjKVG2XwxFc7BOFM');
+define('SUPABASE_SERVICE_ROLE_KEY', getenv('SUPABASE_SERVICE_ROLE_KEY') ?: '');
 
 // JWT Secret: Used to decode/verify Supabase Auth JWT tokens if integrating Supabase Auth
-define('SUPABASE_JWT_SECRET', getenv('SUPABASE_JWT_SECRET') ?: 'YOUR_SUPABASE_JWT_SECRET');
+define('SUPABASE_JWT_SECRET', getenv('SUPABASE_JWT_SECRET') ?: '');
 
 /**
  * Get PostgreSQL database connection (PDO for Supabase)
